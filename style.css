@@ -1,0 +1,102 @@
+body{
+  background-color: grey;
+  margin:0;}
+.sfondo{
+  padding-top:50px;
+  height:1000px;
+  display: flex;
+  justify-content: center;
+}
+.app{
+  border:1px solid black;
+  height:80%;
+  width: 90%;
+}
+.sopra{
+  width: 100%;
+  height: 10%;
+background-color:white;
+}
+.primaparte{
+width: 30%;
+height:90%;
+background-color:blue;
+float: left;
+}
+.secondaparte{
+width:70%;
+height: 90%;
+margin:0;
+float:right;
+
+}
+.notifiche{
+  height:20%;
+  background-color:yellow;
+  width:100%;
+}
+.contatti{
+  height:80%;
+  background-color:purple;
+  width:auto;
+}
+img{
+  padding-top:15%;
+  padding-left:20%;
+  height:50px;
+}
+.immagini{
+  height:50px;
+  width:50px;
+  border-radius: 100%;
+  background-color: white;
+  margin-right:10%;
+  float: left;
+}
+.nero{
+  color:black;
+}
+.grigio{
+  color:grey;
+}
+.campanella{
+  height:65%;
+  width: auto;
+  background-color:lightblue;
+}
+.cerca{
+  height:35%;
+  width:auto;
+  background-color: white;
+}
+.icone{
+  height:calc(100%/8);
+background-color:white;
+display:flex;
+align-content: space-between;
+}
+.icone:hover{
+  background-color:#D3D3D3;
+}
+.sfondowa{
+  height:87%;
+  width: auto;
+  background-color:orange;
+}
+.sotto{
+  height:13%;
+  background-color:pink;
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+.orario{
+  margin-left:25%;
+  color:grey;
+}
+.messaggio{
+  background-color:white;
+  width:80%;
+  height:85%;
+  margin:auto;
+}
