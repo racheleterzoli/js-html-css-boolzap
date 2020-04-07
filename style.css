@@ -119,6 +119,12 @@ body{
     border-right:1px solid grey;
 
   }
+  .affare{
+    width: 50%;
+    height:100%;
+    background-color: red;
+    float: right;
+  }
   #mex{
     border:none;
     height:100%;
