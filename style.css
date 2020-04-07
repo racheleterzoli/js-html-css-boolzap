@@ -1,102 +1,206 @@
 body{
   background-color: grey;
-  margin:0;}
-.sfondo{
-  padding-top:50px;
-  height:1000px;
-  display: flex;
-  justify-content: center;
+  margin:0;
 }
-.app{
-  border:1px solid black;
-  height:80%;
-  width: 90%;
-}
-.sopra{
-  width: 100%;
-  height: 10%;
-background-color:white;
-}
-.primaparte{
-width: 30%;
-height:90%;
-background-color:blue;
-float: left;
-}
-.secondaparte{
-width:70%;
-height: 90%;
-margin:0;
-float:right;
+  .sfondo{
+    padding-top:50px;
+    height:1000px;
+    display: flex;
+    justify-content: center;
+  }
+  .app{
+    height:80%;
+    width: 90%;
+  }
+  .sopra{
+    width: 100%;
+    height: 10%;
+    background-color:#D3D3D3;
+  }
+  .sopra img{
+    margin-top:10px;
+    margin-left:10px;
+  }
 
-}
-.notifiche{
-  height:20%;
-  background-color:yellow;
-  width:100%;
-}
-.contatti{
-  height:80%;
-  background-color:purple;
-  width:auto;
-}
-img{
-  padding-top:15%;
-  padding-left:20%;
-  height:50px;
-}
-.immagini{
-  height:50px;
-  width:50px;
-  border-radius: 100%;
-  background-color: white;
-  margin-right:10%;
+  .primaparte{
+    width: 40%;
+    height:90%;
+    float: left;
+  }
+  .secondaparte{
+    width:60%;
+    height: 90%;
+    margin:0;
+    float:right;
+
+  }
+  .notifiche{
+    height:20%;
+    width:100%;
+  }
+  .contatti{
+    height:80%;
+    width:auto;
+  }
+  img{
+    padding-top:15%;
+    padding-left:20%;
+    height:50px;
+  }
+  .immagini{
+    margin-top:2%;
+    height:50px;
+    width:50px;
+    border-radius: 100%;
+    background-color: white;
+    margin-right:10%;
+    float: left;
+  }
+  .centro{
+    height:50px;
+    width:50px;
+
+    margin-right:20%;
+    float: left;
+  }
+  .nero{
+    color:black;
+  }
+  .grigio{
+    color:grey;
+  }
+  .campanella{
+    height:60%;
+    width: auto;
+    background-color:lightblue;
+  }
+  #cerca{
+    height:40%;
+    width:auto;
+    background-color: white;
+    display: flex;
+    align-items:baseline;
+  }
+  .icone{
+    height:calc(100%/8);
+    background-color:white;
+    display:flex;
+    align-content: space-between;
+  }
+  .icone:hover{
+    background-color:#D3D3D3;
+  }
+  .sfondowa{
+    height:90%;
+    width: auto;
+    background-image: url(sfondowa.jpg);
+    background-size: contain;
+  }
+  .sotto{
+    height:10%;
+    background-color:#FFFDD0;
+    width:100%;
+    display:flex;
+    align-items:center;
+  }
+  .orario{
+    margin-left:25%;
+    color:grey;
+  }
+  .messaggio{
+    background-color:white;
+    width:80%;
+    height:85%;
+    margin:auto;
+  }
+  .mieinfo{
+    height:100%;
+    width: 40%;
+    border-right:1px solid grey;
+
+  }
+  #mex{
+    border:none;
+    height:100%;
+    width:100%;
+    color:grey;
+  }
+  .mex:active{
+
+  }
+  .fa-bell-slash{
+    float: left;
+    padding:15px;
+    margin-top:3%;
+    margin-left:2%;
+    margin-right:5%;
+    color:lightblue;
+    font-size: 25px;
+    background-color:white;
+    border-radius:80%;
+  }
+  #sub{
+    text-decoration: underline;
+    color:grey;
+  }
+  .testonotifiche{
+    padding-top:3%;
+  }
+  .fa-circle-notch{
+    margin-top:5%;
+    float:right;
+    font-size: 20px;
+    color:grey;
+  }
+
+  .fa-comment-alt{
+    margin-top:5%;
+    float: right;
+    margin-left:4%;
+    font-size: 20px;
+    color:grey;
+  }
+  .fa-ellipsis-v{
+    margin-right:5%;
+    margin-top:5%;
+    float: right;
+    margin-left:4%;
+    font-size: 20px;
+    color:grey;
+  }
+.fa-search{
+  color:grey;
+  font-size:20px;
+  margin-top:4%;
+  margin-left:5%;
+  margin-right:9%;
   float: left;
 }
-.nero{
-  color:black;
-}
-.grigio{
+.cerca p{
   color:grey;
 }
-.campanella{
-  height:65%;
-  width: auto;
-  background-color:lightblue;
+.identity{
+  margin-top:3%;
 }
-.cerca{
-  height:35%;
-  width:auto;
-  background-color: white;
+.fa-smile{
+  color:grey;
+  font-size:22px;
+  margin-left:5%;
 }
-.icone{
-  height:calc(100%/8);
-background-color:white;
-display:flex;
-align-content: space-between;
+.fa-microphone{
+  font-size:20px;
+  color:grey;
+  margin-right:3%;
 }
-.icone:hover{
-  background-color:#D3D3D3;
+#lente{
+  width: 30%;
 }
-.sfondowa{
-  height:87%;
-  width: auto;
-  background-color:orange;
-}
-.sotto{
-  height:13%;
-  background-color:pink;
-  width:100%;
-  display:flex;
+.icons{
+  margin-right:5%;
+  float: right;
+  width:20%;
+  height:100%;
+  display: flex;
   align-items:center;
-}
-.orario{
-  margin-left:25%;
-  color:grey;
-}
-.messaggio{
-  background-color:white;
-  width:80%;
-  height:85%;
-  margin:auto;
+  justify-content: space-between;
 }
