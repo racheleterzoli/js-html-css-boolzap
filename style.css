@@ -7,8 +7,12 @@ body{
     height:1000px;
     display: flex;
     justify-content: center;
+
+    background-color:#009688;
   }
   .app{
+    margin: auto;
+
     height:80%;
     width: 90%;
   }
@@ -41,6 +45,7 @@ body{
   .contatti{
     height:80%;
     width:auto;
+    background-color:white;
   }
   img{
     padding-top:15%;
@@ -72,7 +77,7 @@ body{
   .campanella{
     height:60%;
     width: auto;
-    background-color:lightblue;
+    background-color:#8EDAFC;
   }
   #cerca{
     height:40%;
@@ -96,6 +101,39 @@ body{
     background-image: url(sfondowa.jpg);
     background-size: contain;
   }
+  .messaggini{
+    height:100%;
+    width:80%;
+    margin:auto;
+  }
+  .bianco{
+    height:10%;
+    width:20%;
+    background-color:white;
+    border-radius:15px;
+    padding-top:5%;
+    float: left;
+    clear: both;
+    position: relative;
+    margin: 20px 0;
+    padding: 15px 15px 20px 15px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .verde{
+    margin: 20px 0;
+    padding: 15px 15px 20px 15px;
+    height:10%;
+    width:20%;
+    background-color:#D5F9BA;
+    border-radius:15px;
+    float: right;
+    clear: both;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+  }
   .sotto{
     height:10%;
     background-color:#FFFDD0;
@@ -117,9 +155,17 @@ body{
     height:100%;
     width: 40%;
     border-right:1px solid grey;
-
+float: left;
   }
-  .affare{
+  .infocontatto{
+    height:100%;
+    width: 60%;
+    float: right;
+  }
+  .info{
+    margin-top:2%;
+  }
+  .appare{
     width: 50%;
     height:100%;
     background-color: red;
@@ -140,7 +186,7 @@ body{
     margin-top:3%;
     margin-left:2%;
     margin-right:5%;
-    color:lightblue;
+    color:#8EDAFC;
     font-size: 25px;
     background-color:white;
     border-radius:80%;
@@ -194,6 +240,7 @@ body{
   margin-left:5%;
 }
 .fa-microphone{
+  margin-top:20px;
   font-size:20px;
   color:grey;
   margin-right:3%;
@@ -209,4 +256,9 @@ body{
   display: flex;
   align-items:center;
   justify-content: space-between;
+}
+.invia{
+height:100%;
+width:70px;
+text-align: center;
 }
