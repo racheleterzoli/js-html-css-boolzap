@@ -1,202 +1,258 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" href="style.css">
-
-    <title></title>
-  </head>
-  <body>
-    <div class="sfondo">
-      <div class="app">
-        <div class="sopra">
-          <div class="mieinfo">
-            <div class=" centro">
-              <img src="img.jpg" alt="">
-
-            </div>
-            <div class="icons">
-
-
-            <i class="fas fa-ellipsis-v "></i>
-            <i class="fas fa-comment-alt"></i>
-            <i class="fas fa-circle-notch "></i>
-    </div>
-            </div>
-<div class="infocontatto">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-
-  </div>
-  <div class="info">
-
-
-  <div class ="nero"><strong>Michele</strong></div>
-  <div class="grigio">Ultimo accesso oggi alle 15.40</div>
-    </div>
-</div>
-
-        </div>
-        <div class="primaparte">
-<div class="notifiche">
-<div class="campanella">
-  <i class="far fa-bell-slash "></i>
-  <div class="testonotifiche">
-    <div><strong>Ricevi notifiche di nuovi messaggi</strong></div>
-    <div id ="sub">Attiva notifiche deskop</div>
-  </div>
-</div>
-<div id="cerca">
-<i class="fas fa-search" onclick="cancella()"></i>
-<input id ="lente" type="text" class=" form-control" onclick="cancella()" value="Cerca o inizia nuova chat">
-<!-- <p>Cerca o inizia nuova chat</p> -->
-</div>
-</div>
-<div class="contatti">
-<div class="icone">
-<div class="immagini">
-  <img src="img.jpg" alt="">
-
-</div>
-<div class="identity">
-  <div class ="nero"><strong>Michele</strong></div>
-  <div class="grigio">Non poteva essere altrimenti</div>
-</div>
-<div class="orario">
-  <p>17:53</p>
-</div>
-</div>
-<div class="icone">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-
-  </div>
-  <div class="identity">
-    <div class ="nero"><strong>Fabio</strong></div>
-    <div class="grigio">Non poteva essere altrimenti</div>
-  </div>
-  <div class="orario">
-    <p>17:53</p>
-  </div>
-</div>
-<div class="icone">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-
-  </div>
-  <div class="identity">
-    <div class ="nero"><strong>Samuele</strong></div>
-    <div class="grigio">Non poteva essere altrimenti</div>
-  </div>
-  <div class="orario">
-    <p>17:53</p>
-  </div>
-</div>
-<div class="icone">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-
-  </div>
-  <div class="identity">
-    <div class ="nero"><strong>Alessandro B.</strong></div>
-    <div class="grigio">Non poteva essere altrimenti</div>
-  </div>
-  <div class="orario">
-    <p>17:53</p>
-  </div>
-</div>
-<div class="icone">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-
-  </div>
-  <div class="identity">
-    <div class ="nero"><strong>Alessandro L.</strong></div>
-    <div class="grigio">Non poteva essere altrimenti</div>
-  </div>
-  <div class="orario">
-    <p>17:53</p>
-  </div>
-</div>
-<div class="icone">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-  </div>
-  <div class="identity">
-    <div class ="nero"><strong>Claudia</strong></div>
-    <div class="grigio">Non poteva essere altrimenti</div>
-  </div>
-  <div class="orario">
-    <p>17:53</p>
-  </div>
-
-</div>
-<div class="icone">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-
-  </div>
-  <div class="identity">
-    <div class ="nero"><strong>Davide</strong></div>
-    <div class="grigio">Non poteva essere altrimenti</div>
-  </div>
-  <div class="orario">
-    <p>17:53</p>
-  </div>
-</div>
-<div class="icone">
-  <div class="immagini">
-    <img src="img.jpg" alt="">
-
-  </div>
-  <div class="identity">
-    <div class ="nero"><strong>Federico</strong></div>
-    <div class="grigio">Non poteva essere altrimenti</div>
-  </div>
-  <div class="orario">
-    <p>17:53</p>
-  </div>
-</div>
-</div>
-        </div>
-        <div class="secondaparte">
-          <div class="sfondowa">
-            <div class="messaggini">
-
-
-            <div class="bianco">
-              Ciao come stai?
-            </div>
-            <div class="verde">
-              Ciao come stai?
-            </div>
-            </div>
-          </div>
-          <div class="sotto">
-            <i class="far fa-smile"></i>
-            <div class="messaggio">
-<input id ="mex" type="text" class=" form-control" onclick="azzera()" value="Scrivi un messaggio">
-            </div>
-            <div class="invia" role="button">
-
-            <i class="fas fa-microphone"></i>
-
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/c3050381a5.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/c3050381a5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="style.css">
+
+  <title></title>
+</head>
+<body>
+  <div class="sfondo">
+    <div class="app">
+      <div class="sopra">
+        <div class="mieinfo">
+          <div class=" centro">
+            <img src="img.jpg" alt="">
+
+          </div>
+          <div class="icons">
+
+
+            <i class="fas fa-ellipsis-v "></i>
+            <i class="fas fa-comment-alt"></i>
+            <i class="fas fa-circle-notch "></i>
+          </div>
+        </div>
+        <div class="infocontatto">
+          <div class="immagini">
+            <img src="img.jpg" alt="">
+
+          </div>
+          <div class="info">
+
+
+            <div class ="nero"><strong>Michele</strong></div>
+            <div class="grigio">Ultimo accesso oggi alle 15.40</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="primaparte">
+        <div class="notifiche">
+          <div class="campanella">
+            <i class="far fa-bell-slash "></i>
+            <div class="testonotifiche">
+              <div><strong>Ricevi notifiche di nuovi messaggi</strong></div>
+              <div id ="sub">Attiva notifiche deskop</div>
+            </div>
+          </div>
+          <div id="cerca">
+            <i class="fas fa-search" onclick="cancella()"></i>
+            <input id ="lente" type="text" class=" form-control" onclick="cancella()" value="Cerca o inizia nuova chat">
+            <!-- <p>Cerca o inizia nuova chat</p> -->
+          </div>
+        </div>
+        <div class="contatti">
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+
+            </div>
+            <div class="identity" data-nome="michele">
+              <div class ="nero"><strong>Michele</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+
+            </div>
+            <div class="identity" data-nome="fabio">
+              <div class ="nero"><strong>Fabio</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+
+            </div>
+            <div class="identity" data-nome="samuele">
+              <div class ="nero"><strong>Samuele</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+
+            </div>
+            <div class="identity" data-nome="ale-b">
+              <div class ="nero"><strong>Alessandro B.</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+
+            </div>
+            <div class="identity" data-nome="ale-l">
+              <div class ="nero"><strong>Alessandro L.</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+            </div>
+            <div class="identity" data-nome="claudia">
+              <div class ="nero"><strong>Claudia</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+
+          </div>
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+
+            </div>
+            <div class="identity" data-nome="davide">
+              <div class ="nero"><strong>Davide</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+          <div class="icone">
+            <div class="immagini">
+              <img src="img.jpg" alt="">
+
+            </div>
+            <div class="identity" data-nome="federico">
+              <div class ="nero"><strong>Federico</strong></div>
+              <div class="grigio">Non poteva essere altrimenti</div>
+            </div>
+            <div class="orario">
+              <p>17:53</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondaparte">
+        <div class="sfondowa">
+          <div class="messaggini" id="michele">
+            <div class="bianco">
+              Ciao come stai michele?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="verde">
+              Ciao come stai?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="messaggini" id="fabio">
+            <div class="bianco">
+              Ciao come stai fabio?
+            </div>
+            <div class="verde">
+              Ciao come stai?
+            </div>
+          </div>
+          <div class="messaggini" id="samuele">
+            <div class="bianco">
+              Ciao come stai samuele?
+            </div>
+            <div class="verde">
+              Ciao come stai?
+            </div>
+          </div>
+          <div class="messaggini" id="ale-b">
+            <div class="bianco">
+              Ciao come stai alessandro?
+            </div>
+            <div class="verde">
+              Ciao come stai?
+            </div>
+          </div>
+          <div class="messaggini" id="ale-l">
+            <div class="bianco">
+              Ciao come stai alessandro?
+            </div>
+            <div class="verde">
+              Ciao come stai?
+            </div>
+          </div>
+          <div class="messaggini" id="claudia">
+            <div class="bianco">
+              Ciao come stai claudia?
+            </div>
+            <div class="verde">
+              Ciao come stai?
+            </div>
+          </div>
+          <div class="messaggini" id="davide">
+            <div class="bianco">
+              Ciao come stai davide?
+            </div>
+            <div class="verde">
+              Ciao come stai?
+            </div>
+          </div>
+          <div class="messaggini" id="federico">
+            <div class="bianco">
+              Ciao come stai federico?
+            </div>
+            <div class="verde">
+              Ciao come stai?
+            </div>
+          </div>
+        </div>
+        <div class="sotto">
+          <i class="far fa-smile"></i>
+          <div class="messaggio">
+            <input id ="mex" type="text" class=" form-control" onclick="azzera()" value="Scrivi un messaggio">
+          </div>
+          <div class="invia" role="button">
+
+            <i class="fas fa-microphone"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
   <script src="main.js"></script>
-  </body>
+</body>
 </html>

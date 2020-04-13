@@ -105,10 +105,10 @@ body{
     height:100%;
     width:80%;
     margin:auto;
+    display:none;
   }
   .bianco{
     height:10%;
-    width:20%;
     background-color:white;
     border-radius:15px;
     padding-top:5%;
@@ -118,20 +118,17 @@ body{
     margin: 20px 0;
     padding: 15px 15px 20px 15px;
     font-size: 15px;
-    text-align: center;
     vertical-align: middle;
   }
   .verde{
     margin: 20px 0;
     padding: 15px 15px 20px 15px;
     height:10%;
-    width:20%;
     background-color:#D5F9BA;
     border-radius:15px;
     float: right;
     clear: both;
     font-size: 15px;
-    text-align: center;
     vertical-align: middle;
   }
   .sotto{
@@ -261,4 +258,26 @@ float: left;
 height:100%;
 width:70px;
 text-align: center;
+}
+.fa-chevron-down{
+  color:grey;
+  display:none;
+}
+.verde:hover .fa-chevron-down , .bianco:hover .fa-chevron-down {
+  display:inline-block;
+}
+.menu {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+padding: 12px 16px;
+z-index: 1;
+}
+.tendina{
+  position:relative;
+  display:inline-block;
+}
+.tendina:hover .menu {
+  display: block;
 }
