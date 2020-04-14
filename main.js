@@ -1,5 +1,6 @@
 function azzera(){
   document.getElementById("mex").value = "";
+  $(".sotto").find($(".fas")).removeClass('fa-microphone').addClass('fa-sms');
 }
 function cancella(){
   document.getElementById("lente").value = "";
@@ -14,27 +15,38 @@ $(document).ready(function(){
   //gestisco evento su bottone di invio
   buttonSend.click(
     function () {
+      var data=new Date();
+      var ora =data.getHours() ;
+      var minuti = data.getMinutes() ;
       var chat = $('.messaggini.active');
       var onclick_verde = 'erase(this , "verde" )';
       var onclick_bianco = 'erase(this , "bianco" )';
       var dropdown_menu = "<div class='tendina'><i class='fas fa-chevron-down'></i><div class='menu'><div onclick ='"+onclick_verde+"'>Cancella il messaggio </div></div></div>";
       var msg = inputMsg.val();
-      chat.append('<div class="verde">' + msg + dropdown_menu +'  </div>');
+      if(minuti<9){
+        minuti= "0"+minuti;
+      }
+      chat.append('<div class="verde">' + msg +  dropdown_menu +'<div class ="ora">' + ora +"."+minuti+'</div>'+ '</div>');
 
       $(this).append(dropdown_menu);
       inputMsg.val("");
 
       //dopo un secondo
       // deve apparire un nuovo msg con un testo sempre uguale (statico)
+    
+
+
+
       setTimeout(function(){
         var dropdown_menu = "<div class='tendina'><i class='fas fa-chevron-down'></i><div class='menu'><div onclick ='"+onclick_bianco+"'>Cancella il messaggio </div></div></div>";
-        chat.append('<div class="bianco">' + "ok" + dropdown_menu + '</i></div>');
-      }, 1000);
+        chat.append('<div class="bianco">' + "ok" +'<div class ="ora">' +ora +"."+minuti+ dropdown_menu +'</div>' + '</div>');
+      }, 1500);
 
 
     });
 
     $(".identity").click(function(){
+
       $(".messaggini").removeClass("active");
       //far sparire tutto
       $(".messaggini").hide();
@@ -42,6 +54,16 @@ $(document).ready(function(){
       var amico = $(this).data("nome");
       $("#"+ amico).show();
       $("#" + amico).addClass("active");
+
+      $(".infocontatto").removeClass("active");
+      //far sparire tutto
+      $(".infocontatto").hide();
+      //far vedre solo id giusto
+      var friend = $(this).data("numero");
+      $("#"+ friend).show();
+      $("#" + friend).addClass("active");
+
+
 
     });
 
@@ -52,10 +74,10 @@ $(document).ready(function(){
 
     $("#lente").keyup(function(){ //mentr scriviamo
 
-      var inputSearch = $("#lente").val(); //prendo il valore
+      var inputSearch = $("#lente").val().toLowerCase(); //prendo il valore
 
       $(".icone" ).each(function() { //ciclo tutti i nomi
-        var nome = $(this).find(".identity >.nero").text();
+        var nome = $(this).find(".identity >.nero").text().toLowerCase();
 
         if(nome.includes(inputSearch) === false){
           console.log(nome+" false");

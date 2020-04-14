@@ -158,6 +158,7 @@ float: left;
     height:100%;
     width: 60%;
     float: right;
+    display:none;
   }
   .info{
     margin-top:2%;
@@ -242,6 +243,13 @@ float: left;
   color:grey;
   margin-right:3%;
 }
+.fa-sms{
+
+    margin-top:20px;
+    font-size:20px;
+    color:grey;
+    margin-right:3%;
+}
 #lente{
   width: 30%;
 }
@@ -280,4 +288,11 @@ z-index: 1;
 }
 .tendina:hover .menu {
   display: block;
+}
+img{
+  height:50px;
+  width:50px;
+}
+.ora{
+  color:grey;
 }
