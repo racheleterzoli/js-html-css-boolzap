@@ -7,7 +7,6 @@ body{
     height:1000px;
     display: flex;
     justify-content: center;
-
     background-color:#009688;
   }
   .app{
@@ -56,7 +55,6 @@ body{
     margin-top:2%;
     height:50px;
     width:50px;
-    border-radius: 100%;
     background-color: white;
     margin-right:10%;
     float: left;
@@ -91,6 +89,7 @@ body{
     background-color:white;
     display:flex;
     align-content: space-between;
+    border:1px solid #F0F8FF;
   }
   .icone:hover{
     background-color:#D3D3D3;
@@ -175,9 +174,7 @@ float: left;
     width:100%;
     color:grey;
   }
-  .mex:active{
 
-  }
   .fa-bell-slash{
     float: left;
     padding:15px;

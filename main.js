@@ -29,11 +29,11 @@ $(document).ready(function(){
       chat.append('<div class="verde">' + msg +  dropdown_menu +'<div class ="ora">' + ora +"."+minuti+'</div>'+ '</div>');
 
       $(this).append(dropdown_menu);
-      inputMsg.val("");
+      inputMsg.val("Scrivi un messaggio");
 
       //dopo un secondo
       // deve apparire un nuovo msg con un testo sempre uguale (statico)
-    
+
 
 
 
